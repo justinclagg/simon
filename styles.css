@@ -4,26 +4,27 @@ h1 {
 }
 
 .flex-row {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  margin: 0px 10px 0px 10px;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	margin: 0px 10px 0px 10px;
 }
 
 .square {
-  display: flex;
-  box-sizing: border-box;
-  /* Width of box includes padding */
-  align-items: center;
-  flex-basis: 50%;
-  max-width: 175px;
-  border: 1px solid black;
-  border: 1px solid black;
+	display: flex;
+	box-sizing: border-box;
+	/* Width of box includes padding */
+	align-items: center;
+	flex-basis: 50%;
+	max-width: 175px;
+	border: 1px solid black;
+	border: 1px solid black;
 }
 .square::after {
-  /* Fills cell to make it square */
-  content: "";
-  padding-bottom: 100%;
+	/* Fills cell to make it square */
+	display: table;
+	content: "";
+	padding-bottom: 100%;
 }
 .square:hover {
 	cursor: pointer;
@@ -51,15 +52,15 @@ h1 {
 
 .button-row {
 	margin: 30px 5px 30px 5px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .mode-buttons {
 	margin: 3px;
-  width: 70px;
-  height: 50px;
+	width: 70px;
+	height: 50px;
 	background-color: #FFF;
 	color: #000;
 	border: 1px solid #000;
@@ -78,5 +79,5 @@ h1 {
 .round-number {
 	text-align: center;
 	font-size: 30px;
-  margin-bottom: 20px;
+	margin-bottom: 20px;
 }
