@@ -5,24 +5,34 @@
 	<meta name="description" content="Play the game of Simon in your browser.">
 	<meta name="author" content="Justin Clagg">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script type="text/javascript" src="script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:400,300,100,700,500' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="../justinclagg.github.io/assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+	<link rel="stylesheet" type="text/css" href="../justinclagg.github.io/assets/css/project-footer.css">
+    <script type="text/javascript" src="./script.js" defer></script>
+</head>
 <body>
 	<h1>Simon</h1>
+	<p id="message" class="info-text">Click start to begin.</p>
 	<div class="flex-row">
-		<div id="green" class="square"></div>
-		<div id="red" class="square"></div>
+		<div id="green-sq" class="square green-bg"></div>
+		<div id="red-sq" class="square red-bg"></div>
 	</div>
 	<div class="flex-row">
-		<div id="yellow" class="square"></div>
-		<div id="blue" class="square"></div>
+		<div id="yellow-sq" class="square yellow-bg"></div>
+		<div id="blue-sq" class="square blue-bg"></div>
 	</div>
-	<div class="button-row">
-		<button id="startBtn" class="mode-buttons">Start</button>
-		<button id="resetBtn" class="mode-buttons">Reset</button>
-		<button id="strictBtn" class="mode-buttons">Strict</button>
+	<div class="btn-row">
+		<button id="start-btn" class="option-btn">Start</button>
+		<button id="reset-btn" class="option-btn">Reset</button>
+		<button id="strict-btn" class="option-btn">Strict</button>
 	</div>
-	<div class="round-number">Round <span id="roundNum">1</span></div>
+	<p class="info-text">Round <span id="round-num">1</span></p>
+	<footer class="project-footer">
+		<p>Copyright © 2016 Justin Clagg</p>
+		<a href="http://www.justinclagg.com">Portfolio</a>
+		<a href="https://github.com/justinclagg/simon" target="_blank">Source</a>
+	</footer>
 </body>
 </html>

@@ -1,72 +1,81 @@
-h1 {
-	font-size: 3em;
+
+body {
+	padding: 0 10px;
 	text-align: center;
+	color: #000;
+	font-family: "Alegreya Sans", sans-serif;
+	background-color: #FFF;
 }
+
+/* Text */
+
+h1 {
+	font-size: 50px;
+}
+
+.info-text {
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+/* Game Squares */
 
 .flex-row {
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: center;
-	margin: 0px 10px 0px 10px;
 }
 
 .square {
-	display: flex;
-	box-sizing: border-box;
-	/* Width of box includes padding */
-	align-items: center;
 	flex-basis: 50%;
 	max-width: 175px;
 	border: 1px solid black;
-	border: 1px solid black;
+	opacity: 0.6;
 }
+
 .square::after {
-	/* Fills cell to make it square */
-	display: table;
+	display: block;
 	content: "";
 	padding-bottom: 100%;
 }
+
 .square:hover {
 	cursor: pointer;
 }
 
-#green {
-	opacity: 0.6;
+.green-bg {
 	background-color: rgb(0, 255, 0);
 }
 
-#red {
-	opacity: 0.6;
+.red-bg {
 	background-color: rgb(255, 0, 0);
 }
 
-#yellow {
-	opacity: 0.6;
+.yellow-bg {
 	background-color: rgb(255, 255, 0);
 }
 
-#blue {
-	opacity: 0.6;
+.blue-bg {
 	background-color: rgb(0, 0, 255);
 }
 
-.button-row {
-	margin: 30px 5px 30px 5px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+/* Option Buttons */
+
+.btn-row {
+	margin: 30px auto;
 }
 
-.mode-buttons {
+.option-btn {
 	margin: 3px;
 	width: 70px;
 	height: 50px;
-	background-color: #FFF;
-	color: #000;
+	background-color: transparent;
 	border: 1px solid #000;
+	color: #000;
+	font-size: 16px;
 }
 
-.mode-buttons:active {
+.option-btn:active {
 	background-color: #000;
 	color: #FFF;
 }
@@ -74,10 +83,4 @@ h1 {
 .active {
 	background-color: #000;
 	color: #FFF;
-}
-
-.round-number {
-	text-align: center;
-	font-size: 30px;
-	margin-bottom: 20px;
 }
